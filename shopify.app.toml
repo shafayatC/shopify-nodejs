@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "d51d895d65fa1b39459ae784a72828ed"
+name = "my-node-app"
+handle = "my-node-app-271"
+application_url = "https://bd4f-103-197-204-22.ngrok-free.app/"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = false
+dev_store_url = "testmyreact.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [ "https://bd4f-103-197-204-22.ngrok-free.app/api/auth" ]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
